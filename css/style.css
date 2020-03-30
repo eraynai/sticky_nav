@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  background: #f68880;
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 100%;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+.red {
+  background-color: red;
+  padding: 50px;
+}
+
+header {
+  text-align: center;
+  height: 50vh;
+  background: url('../img/catinbox_60.jpg') bottom center no-repeat;
+  background-color: #f68880;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+  /*margin-bottom: 270px;*/
+  width: 100%;
+}
+
+nav {
+  background: #110428;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav nav {
+  position: fixed;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.catLogo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 1s;
+  font-weight: 600;
+  font-size: 30px;
+  color: red;
+}
+
+.fixed-nav li.catLogo {
+  max-width: 700px;
+}
+
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 20px;
+  margin-bottom: 80px;
+
+}
+
+.container p,
+h2 {
+  color: whitesmoke;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+
+#about {
+  background-color: #e34f26;
+}
+
+#evolution {
+  background-color: #002561;
+}
+
+#domestic {
+  background-color: #333;
+}
+
+#claws {
+  background-color: #a4a9aa;
+}
+
+#balance {
+  background-color: #286d4f;
+}
